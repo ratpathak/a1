@@ -1,0 +1,178 @@
+Q1. Why do we call Python as a general purpose and high-level programming language?
+
+A. 1.Python is easy to use: It is simple with an easily readable syntax and that makes it well-loved by both seasoned developers and experimental students.
+   2.Python runs on any platform: Not only is Python profoundly utilizer-amicable, but it also runs everywhere. It runs on Windows, Unix, Linux, MacOS.
+   3.Extensive support libraries: It provides large standard libraries that include the areas like string operations, Internet, web accommodation implements, 
+     operating system interfaces, and protocols. Most of the highly used programming tasks are already scripted into it that constrains the length of the codes to be inscribed in Python.
+   4.Python is accessible: For newcomers and beginners, Python is incredibly easy to learn and use. In fact, it’s one of the most accessible programming languages available. Part of the 
+     reason is the simplified syntax with an emphasis on natural language. But it’s also because you can write Python code and execute it much faster
+	 
+	 
+Q2. Why is Python called a dynamically typed language?
+
+     Python is a dynamically typed language. It doesn’t know about the type of the variable until the code is run. So declaration is of no use.
+	 What it does is, It stores that value at some memory location and then binds that variable name to that memory container.
+	 And makes the contents of the container accessible through that variable name. So the data type does not matter.
+	 As it will get to know the type of the value at run-time.
+	 
+Q3. List some pros and cons of Python programming language?
+
+Cons of python:
+    Speed limitations - You most likely remember that the Python program is interpreted at runtime, line by line, instead of being compiled to the machine code in one piece.
+	While this brings advantages in terms of debugging, it comes at a price of the runtime performance.
+
+    No multithreading - Python uses a mechanism called a Global Interpreter Lock, or GIL for short, that allows only one sequence of bytecode instructions (thread) to be executed at a time. GIL brings important benefits as it
+    ensures thread safety, enhances the performance of single-threaded programs, and simplifies the integration of non-thread-safe C libraries with Python.	
+	
+	High memory consumption - Python is often criticized for high usage of resources, even when multiprocessing isn’t involved. 
+	While Python has a garbage collector to manage memory, it doesn’t return resources to the system immediately after the object becomes unnecessary.
+	Besides that, if your code holds any references on this outdated object, it can’t be deleted at all.
+
+Q4. In what all domains can we use Python?
+
+    yes.
+	
+Q5. What are variable and how can we declare them?
+
+    Python Variable is containers which store values. Python is not “statically typed”. We do not need to declare variables before using them or declare their type.
+	A variable is created the moment we first assign a value to it. A Python variable is a name given to a memory location. It is the basic unit of storage in a program.
+	
+	Var = "Ratan"
+    print(Var)
+	
+Q6. How can we take an input from the user in Python?
+
+   input (): This function first takes the input from the user and converts it into a string. The type of the returned object always will be <type ‘str’>.
+   It does not evaluate the expression it just returns the complete statement as String. For example, Python provides a built-in function called input which 
+   takes the input from the user. When the input function is called it stops the program and waits for the user’s input. When the user presses enter, 
+   the program resumes and returns what the user typed. 
+   
+   inp = input('STATEMENT')
+   
+Q7. What is the default datatype of the value that has been taken as an input using input() function?
+
+    String
+	
+Q8. What is type casting?
+
+    Type Casting is the method to convert the variable data type into a certain data type in order to the operation required to be performed by users.
+	In this article, we will see the various technique for typecasting.
+	
+Q9. Can we take more than one input from the user using single input() function? If yes, how? If no, why?
+
+    The developer often wants a user to enter multiple values or inputs in one line. In C++/C user can take multiple inputs in one line using scanf but in Python user can take multiple values or inputs in one line by two methods. 
+
+    Using split() method
+    Using List comprehension
+	
+	# taking three inputs at a time
+    x, y, z = input("Enter three values: ").split()
+    print("Total number of students: ", x)
+    print("Number of boys is : ", y)
+    print("Number of girls is : ", z)
+    print()
+  
+Q10. What are keywords?
+
+    Python keywords are special reserved words that have specific meanings and purposes and can't be used for anything but those specific purposes. 
+	These keywords are always available—you'll never have to import them into your code.
+	
+Q11. Can we use keywords as a variable? Support your answer with reason.
+
+    We cannot use a keyword as a variable name, function name, or any other identifier.
+	They are used to define the syntax and structure of the Python language. It creates confusion to compiler to take value as keyword or variable.
+	
+Q12. What is indentation? What's the use of indentaion in Python?
+
+    Python indentation refers to adding white space before a statement to a particular block of code. 
+	In another word, all the statements with the same space to the right, belong to the same code block.
+	
+Q13. How can we throw some output in Python?
+
+    We use the widely used print() statement to display some data on the screen
+	
+Q14. What are operators in Python?
+
+    Operators are used to perform operations on variables and values.
+	Python divides the operators in the following groups:
+
+Arithmetic operators
+Assignment operators
+Comparison operators
+Logical operators
+Identity operators
+Membership operators
+Bitwise operators
+
+Q15. What is difference between / and // operators?
+
+    One returns divison value in float format and other in int format.
+
+Q16. Write a code that gives following as an output.
+```
+iNeuroniNeuroniNeuroniNeuron
+
+    a = "iNeuron"
+    print(a*4)
+	
+Q17. Write a code to take a number as an input from the user and check if the number is odd or even.
+
+    Num = int(input("Enter any number"))
+if (Num%2) == 0:
+    print("Num is Even")
+else:
+    print("Number is Odd")
+	
+Q18. What are boolean operator?
+
+    Boolean Operators are simple words (AND, OR, NOT or AND NOT) used as conjunctions to combine or exclude keywords in a search, 
+	resulting in more focused and productive results.This should save time and effort by eliminating inappropriate hits that must be scanned before discarding.
+	
+Q19. What will the output of the following?
+```
+1 or 0
+
+0 and 0
+
+True and False and True
+
+1 or 0 or 0
+```
+
+    true
+	true
+	false
+	true
+	
+Q20. What are conditional statements in Python?
+
+    Like every other programming language, Python also has some predefined conditional statements. A conditional statement as the name suggests itself, is used to handle conditions in your program. These statements guide the program while making decisions based on the conditions encountered by the program.
+
+Python has 3 key Conditional Statements that you should know:
+
+if statement
+if-else statement
+if-elif-else ladder
+
+Q21. What is use of 'if', 'elif' and 'else' keywords?
+
+    if - The body of if is executed only if this evaluates to True
+	elif - It allows us to check for multiple expressions
+	else - If the condition is False, the body of else is executed. Indentation is used to separate the blocks.
+	
+22. Write a code to take the age of person as an input and if age >= 18 display "I can vote". If age is < 18 display "I can't vote".
+
+	if age>= 18:
+    print("I can vote")
+else:
+    print("I can't vote")
+	
+Q23. Write a code that displays the sum of all the even numbers from the given list.
+```
+numbers = [12, 75, 150, 180, 145, 525, 50]
+
+    
+	
+
+	
+	
